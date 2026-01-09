@@ -21,62 +21,81 @@ RETRY_COUNT = 3
 RETRY_DELAY = 2
 USER_AGENT = "Mozilla/5.0 (Windows NT 10.0; Win64; x64) Chrome/114.0.0.0 Safari/537.36"
 
-BLACKLIST_CONFIG = {
-    "ads": [
-        "https://raw.githubusercontent.com/cjchxgxhc/domain-filter/refs/heads/main/rules/ads.txt",
-        "https://raw.githubusercontent.com/Aethersailor/adblockfilters-modified/refs/heads/main/rules/adblockdnslite.txt",
-        "https://raw.githubusercontent.com/TG-Twilight/AWAvenue-Ads-Rule/main/AWAvenue-Ads-Rule.txt",
-        "https://raw.githubusercontent.com/217heidai/adblockfilters/main/rules/adblockdnslite.txt",
-        "https://raw.githubusercontent.com/lingeringsound/10007_auto/refs/heads/master/configure/%E8%87%AA%E5%AE%9A%E4%B9%89.prop",
-        "https://raw.githubusercontent.com/privacy-protection-tools/anti-AD/refs/heads/adlist-maker/scripts/origin-files/anti-ad-origin-block.txt",
-       # "https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/BanProgramAD.list",
-        "https://raw.githubusercontent.com/Cats-Team/AdRules/refs/heads/script/mod/rules/dns-rules.txt",
-        "https://raw.githubusercontent.com/qq5460168/666/master/dns.txt",
-        "https://raw.githubusercontent.com/hagezi/dns-blocklists/refs/heads/main/domains/native.oppo-realme.txt",
-        "https://raw.githubusercontent.com/hagezi/dns-blocklists/refs/heads/main/adblock/native.xiaomi.txt"
-    ],
-    "HaGeZi's Pro++ mini Blocklist": [
-        "https://raw.githubusercontent.com/hagezi/dns-blocklists/refs/heads/main/adblock/pro.plus.mini.txt"
-    ],
-    "gfw": [
-        "https://raw.githubusercontent.com/Loyalsoldier/v2ray-rules-dat/release/gfw.txt"
-    ],
-    "direct": [
-        "https://raw.githubusercontent.com/cjchxgxhc/domain-filter/refs/heads/main/rules/direct.txt",
-        "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/refs/heads/master/rule/Clash/Notion/Notion.list"
-    ],
-    "proxy": [
-        "https://raw.githubusercontent.com/cjchxgxhc/domain-filter/refs/heads/main/rules/proxy.txt",
-        "https://raw.githubusercontent.com/Loyalsoldier/v2ray-rules-dat/release/proxy-list.txt",
-        "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/refs/heads/master/rule/Clash/Global/Global.list",
-        "https://raw.githubusercontent.com/Loyalsoldier/v2ray-rules-dat/release/gfw.txt",
-        "https://raw.githubusercontent.com/cutethotw/ClashRule/refs/heads/main/Rule/Outside.list",
-        "https://raw.githubusercontent.com/LM-Firefly/Rules/refs/heads/master/PROXY.list"
-    ],
-    "bypass": [
-        "https://raw.githubusercontent.com/hagezi/dns-blocklists/main/domains/doh.txt",
-        "https://raw.githubusercontent.com/hagezi/dns-blocklists/main/wildcard/dyndns-onlydomains.txt",
-        "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/refs/heads/master/rule/Clash/DNS/DNS.list"
-    ]
-}
-WHITELIST_CONFIG = {
-    "ads": [
-        "https://raw.githubusercontent.com/cjchxgxhc/domain-filter/refs/heads/main/rules/ads_white.txt",
-        "https://raw.githubusercontent.com/qq5460168/Who520/refs/heads/main/white.txt",
-        "https://raw.githubusercontent.com/neodevpro/neodevhost/refs/heads/master/allow",
-        "https://raw.githubusercontent.com/217heidai/adblockfilters/refs/heads/main/rules/white.txt"
-    ],
-    "HaGeZi's Pro++ mini Blocklist": [
-        "https://raw.githubusercontent.com/cjchxgxhc/domain-filter/refs/heads/main/rules/ads_white.txt",
-        "https://raw.githubusercontent.com/217heidai/adblockfilters/refs/heads/main/rules/white.txt"
-    ],
-    "proxy": [
-        "https://raw.githubusercontent.com/cjchxgxhc/domain-filter/refs/heads/main/rules/proxy_white.txt",
-        "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/refs/heads/master/rule/Clash/Notion/Notion.list",
-        "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/refs/heads/master/rule/Clash/ChinaMaxNoIP/ChinaMaxNoIP.list",
-        "https://raw.githubusercontent.com/hagezi/dns-blocklists/refs/heads/main/domains/pro.txt",
-        "https://raw.githubusercontent.com/Aethersailor/Custom_OpenClash_Rules/refs/heads/main/rule/Custom_Direct.list"
-    ]
+CONFIG = {
+    "ads": {
+        "blocklist": [
+            "https://raw.githubusercontent.com/cjchxgxhc/domain-filter/refs/heads/main/rules/ads.txt",
+            "https://raw.githubusercontent.com/Aethersailor/adblockfilters-modified/refs/heads/main/rules/adblockdnslite.txt",
+            "https://raw.githubusercontent.com/TG-Twilight/AWAvenue-Ads-Rule/main/AWAvenue-Ads-Rule.txt",
+            "https://raw.githubusercontent.com/217heidai/adblockfilters/main/rules/adblockdnslite.txt",
+            "https://raw.githubusercontent.com/lingeringsound/10007_auto/refs/heads/master/configure/%E8%87%AA%E5%AE%9A%E4%B9%89.prop",
+            "https://raw.githubusercontent.com/privacy-protection-tools/anti-AD/refs/heads/adlist-maker/scripts/origin-files/anti-ad-origin-block.txt",
+           # "https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/BanProgramAD.list",
+            "https://raw.githubusercontent.com/Cats-Team/AdRules/refs/heads/script/mod/rules/dns-rules.txt",
+            "https://raw.githubusercontent.com/qq5460168/666/master/dns.txt",
+            "https://raw.githubusercontent.com/hagezi/dns-blocklists/refs/heads/main/domains/native.oppo-realme.txt",
+            "https://raw.githubusercontent.com/hagezi/dns-blocklists/refs/heads/main/adblock/native.xiaomi.txt"
+        ],
+        "whitelist": [
+            "https://raw.githubusercontent.com/cjchxgxhc/domain-filter/refs/heads/main/rules/ads_white.txt",
+            "https://raw.githubusercontent.com/qq5460168/Who520/refs/heads/main/white.txt",
+            "https://raw.githubusercontent.com/neodevpro/neodevhost/refs/heads/master/allow",
+            "https://raw.githubusercontent.com/217heidai/adblockfilters/refs/heads/main/rules/white.txt"
+        ],
+        "formats": ["domains"]  # 默认只输出 domains，可以修改为 ["adblock"], ["clash"], ["adblock", "clash", "domains"] 等
+    },
+    "HaGeZi's Pro++ mini Blocklist": {
+        "blocklist": [
+            "https://raw.githubusercontent.com/hagezi/dns-blocklists/refs/heads/main/adblock/pro.plus.mini.txt"
+        ],
+        "whitelist": [
+            "https://raw.githubusercontent.com/cjchxgxhc/domain-filter/refs/heads/main/rules/ads_white.txt",
+            "https://raw.githubusercontent.com/217heidai/adblockfilters/refs/heads/main/rules/white.txt"
+        ],
+        "formats": ["domains"]
+    },
+    "gfw": {
+        "blocklist": [
+            "https://raw.githubusercontent.com/Loyalsoldier/v2ray-rules-dat/release/gfw.txt"
+        ],
+        "whitelist": [],
+        "formats": ["domains"]
+    },
+    "direct": {
+        "blocklist": [
+            "https://raw.githubusercontent.com/cjchxgxhc/domain-filter/refs/heads/main/rules/direct.txt",
+            "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/refs/heads/master/rule/Clash/Notion/Notion.list"
+        ],
+        "whitelist": [],
+        "formats": ["domains"]
+    },
+    "proxy": {
+        "blocklist": [
+            "https://raw.githubusercontent.com/cjchxgxhc/domain-filter/refs/heads/main/rules/proxy.txt",
+            "https://raw.githubusercontent.com/Loyalsoldier/v2ray-rules-dat/release/proxy-list.txt",
+            "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/refs/heads/master/rule/Clash/Global/Global.list",
+            "https://raw.githubusercontent.com/Loyalsoldier/v2ray-rules-dat/release/gfw.txt",
+            "https://raw.githubusercontent.com/cutethotw/ClashRule/refs/heads/main/Rule/Outside.list",
+            "https://raw.githubusercontent.com/LM-Firefly/Rules/refs/heads/master/PROXY.list"
+        ],
+        "whitelist": [
+            "https://raw.githubusercontent.com/cjchxgxhc/domain-filter/refs/heads/main/rules/proxy_white.txt",
+            "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/refs/heads/master/rule/Clash/Notion/Notion.list",
+            "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/refs/heads/master/rule/Clash/ChinaMaxNoIP/ChinaMaxNoIP.list",
+            "https://raw.githubusercontent.com/hagezi/dns-blocklists/refs/heads/main/domains/pro.txt",
+            "https://raw.githubusercontent.com/Aethersailor/Custom_OpenClash_Rules/refs/heads/main/rule/Custom_Direct.list"
+        ],
+        "formats": ["domains"]
+    },
+    "bypass": {
+        "blocklist": [
+            "https://raw.githubusercontent.com/hagezi/dns-blocklists/main/domains/doh.txt",
+            "https://raw.githubusercontent.com/hagezi/dns-blocklists/main/wildcard/dyndns-onlydomains.txt",
+            "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/refs/heads/master/rule/Clash/DNS/DNS.list"
+        ],
+        "whitelist": [],
+        "formats": ["domains"]
+    }
 }
 
 DOMAIN_PATTERN = re.compile(
@@ -204,7 +223,7 @@ def extract_white_domain(line: str) -> Optional[str]:
     return extract_domain(line, True)
 
 def process_chunk(chunk: List[str], extractor: Callable[[str], Optional[str]]) -> Set[str]:
-    return {d for l in chunk if (d := extractor(l))}
+    return {d for l in chunk if (d := extractor(l)) and d}  # 确保 d 不为空
 
 def parallel_extract_domains(lines: List[str], extractor: Callable[[str], Optional[str]]) -> Set[str]:
     if not lines:
@@ -257,7 +276,7 @@ def _beijing_now_str() -> str:
     bj = utc_now + datetime.timedelta(hours=8)
     return bj.strftime("%Y-%m-%d %H:%M:%S") + " CST"
 
-def save_domains_to_files(domains: Set[str], output_path: Path, group_name: str, source_urls: List[str], white_source_urls: List[str]) -> None:
+def save_domains_to_files(domains: Set[str], output_path: Path, group_name: str, source_urls: List[str], white_source_urls: List[str], formats: List[str]) -> None:
     if not domains:
         log(f"{group_name} 无域名可保存")
         return
@@ -266,67 +285,73 @@ def save_domains_to_files(domains: Set[str], output_path: Path, group_name: str,
     group_dir.mkdir(parents=True, exist_ok=True)
     beijing_time = _beijing_now_str()
 
-    adblock_path = group_dir / "adblock.txt"
-    with open(adblock_path, "w", encoding="utf-8") as f:
-        f.write(f"! Title: {group_name} Blocklist\n")
-        f.write(f"! Description: Generated by domain-filter\n")
-        f.write(f"! Last modified: {beijing_time}\n")
-        f.write(f"! Entries: {len(sorted_domains)}\n")
-        f.write("! 适用于: AdBlock, AdGuard, uBlock Origin\n")
-        f.write("! Blacklist sources:\n")
-        for src in source_urls:
-            f.write(f"! {src}\n")
-        if white_source_urls:
-            f.write("! Whitelist sources:\n")
-            for src in white_source_urls:
+    if "adblock" in formats:
+        adblock_path = group_dir / "adblock.txt"
+        with open(adblock_path, "w", encoding="utf-8") as f:
+            f.write(f"! Title: {group_name} Blocklist\n")
+            f.write(f"! Description: Generated by domain-filter\n")
+            f.write(f"! Last modified: {beijing_time}\n")
+            f.write(f"! Entries: {len(sorted_domains)}\n")
+            f.write("! Applies to: AdBlock, AdGuard, uBlock Origin\n")
+            f.write("! Blacklist sources:\n")
+            for src in source_urls:
                 f.write(f"! {src}\n")
-        f.write("\n")
-        for d in sorted_domains:
-            f.write(f"||{d}^\n")
-    log(f"已写入 AdBlock 文件: {adblock_path} ({len(sorted_domains)} 个域名)")
+            if white_source_urls:
+                f.write("! Whitelist sources:\n")
+                for src in white_source_urls:
+                    f.write(f"! {src}\n")
+            f.write("\n")
+            for d in sorted_domains:
+                f.write(f"||{d}^\n")
+        log(f"已写入 AdBlock 文件: {adblock_path} ({len(sorted_domains)} 个域名)")
 
-    clash_path = group_dir / "clash.yaml"
-    with open(clash_path, "w", encoding="utf-8") as f:
-        f.write("# Generated by domain-filter\n")
-        f.write(f"# 规则: {group_name}\n")
-        f.write(f"# 更新时间 (北京时间): {beijing_time}\n")
-        f.write(f"# 域名数量: {len(sorted_domains)}\n")
-        f.write("# 适用: Clash (domain payload list)\n")
-        f.write("# 黑名单来源:\n")
-        for src in source_urls:
-            f.write(f"# - {src}\n")
-        if white_source_urls:
-            f.write("# 白名单来源:\n")
-            for src in white_source_urls:
+    if "clash" in formats or "yaml" in formats:
+        clash_path = group_dir / "clash.yaml"
+        with open(clash_path, "w", encoding="utf-8") as f:
+            f.write("# Generated by domain-filter\n")
+            f.write(f"# 规则: {group_name}\n")
+            f.write(f"# 更新时间 (北京时间): {beijing_time}\n")
+            f.write(f"# 域名数量: {len(sorted_domains)}\n")
+            f.write("# 适用: Clash (domain payload list)\n")
+            f.write("# 黑名单来源:\n")
+            for src in source_urls:
                 f.write(f"# - {src}\n")
-        f.write("# payload 为 YAML 字符串列表，条目格式为 \"+.domain\"\n\n")
-        f.write("payload:\n")
-        for d in sorted_domains:
-            f.write(f"  - \"+.{d}\"\n")
-    log(f"已写入 Clash 文件: {clash_path} ({len(sorted_domains)} 个域名)")
+            if white_source_urls:
+                f.write("# 白名单来源:\n")
+                for src in white_source_urls:
+                    f.write(f"# - {src}\n")
+            f.write("# payload 为 YAML 字符串列表，条目格式为 \"+.domain\"\n\n")
+            f.write("payload:\n")
+            for d in sorted_domains:
+                f.write(f"  - \"+.{d}\"\n")
+        log(f"已写入 Clash 文件: {clash_path} ({len(sorted_domains)} 个域名)")
 
-    domains_path = group_dir / "domains.txt"
-    with open(domains_path, "w", encoding="utf-8") as f:
-        for d in sorted_domains:
-            f.write(f"{d}\n")
-    log(f"已写入 Domains 文件: {domains_path} ({len(sorted_domains)} 个域名)")
+    if "domains" in formats:
+        domains_path = group_dir / "domains.txt"
+        with open(domains_path, "w", encoding="utf-8") as f:
+            for d in sorted_domains:
+                f.write(f"{d}\n")
+        log(f"已写入 Domains 文件: {domains_path} ({len(sorted_domains)} 个域名)")
 
-def process_rule_group(name: str, urls: List[str], white_domains: Set[str], white_sources: List[str],
-                       downloaded: Dict[str, List[str]], output_dir: Path) -> None:
+def process_rule_group(name: str, block_urls: List[str], white_urls: List[str], downloaded_black: Dict[str, List[str]], downloaded_white: Dict[str, List[str]], output_dir: Path, formats: List[str]) -> None:
     sanitized = sanitize(name)
-    if not sanitized or not urls:
+    if not sanitized or not block_urls:
         log(f"跳过无效组: {name}", critical=True)
         return
     log(f"开始处理组: {name}")
-    lines: Set[str] = set()
-    for url in urls:
-        lines.update(downloaded.get(url, []))
-    if not lines:
-        log(f"组 {name} 无内容，跳过")
+    black_lines: List[str] = []
+    for url in block_urls:
+        black_lines.extend(downloaded_black.get(url, []))
+    if not black_lines:
+        log(f"组 {name} 无黑名单内容，跳过")
         return
-    black_domains = process_blacklist_rules(list(lines))
+    white_lines: List[str] = []
+    for url in white_urls:
+        white_lines.extend(downloaded_white.get(url, []))
+    black_domains = process_blacklist_rules(black_lines)
+    white_domains = process_whitelist_rules(white_lines)
     final_domains = blacklist_dedup_and_filter(black_domains, white_domains)
-    save_domains_to_files(final_domains, output_dir, sanitized, urls, white_sources)
+    save_domains_to_files(final_domains, output_dir, sanitized, block_urls, white_urls, formats)
 
 def main():
     start_time = time.time()
@@ -334,30 +359,19 @@ def main():
     output_dir.mkdir(parents=True, exist_ok=True)
     log(f"输出目录: {output_dir.absolute()}")
 
-    all_white_urls = [u for urls in WHITELIST_CONFIG.values() for u in urls]
+    all_white_urls = [u for group in CONFIG.values() for u in group.get("whitelist", [])]
     downloaded_white = download_all_urls(all_white_urls) if all_white_urls else {}
-    whitelist_domains: Dict[str, Set[str]] = {}
-    whitelist_sources: Dict[str, List[str]] = {}
-    for name, urls in WHITELIST_CONFIG.items():
-        sanitized = sanitize(name)
-        if sanitized and urls:
-            lines = [ln for url in urls for ln in downloaded_white.get(url, [])]
-            domains = process_whitelist_rules(lines)
-            if domains:
-                whitelist_domains[sanitized] = domains
-                whitelist_sources[sanitized] = urls
-                log(f"白名单 {name}: 提取 {len(domains)} 个域名")
 
-    all_black_urls = [u for urls in BLACKLIST_CONFIG.values() for u in urls]
+    all_black_urls = [u for group in CONFIG.values() for u in group.get("blocklist", [])]
     downloaded_black = download_all_urls(all_black_urls) if all_black_urls else {}
 
     with ThreadPoolExecutor(max_workers=RULEGROUP_WORKERS) as ex:
         futures = []
-        for name, urls in BLACKLIST_CONFIG.items():
-            sname = sanitize(name)
-            white = whitelist_domains.get(sname, set())
-            white_srcs = whitelist_sources.get(sname, [])
-            futures.append(ex.submit(process_rule_group, name, urls, white, white_srcs, downloaded_black, output_dir))
+        for name, conf in CONFIG.items():
+            block_urls = conf.get("blocklist", [])
+            white_urls = conf.get("whitelist", [])
+            formats = conf.get("formats", ["domains"])
+            futures.append(ex.submit(process_rule_group, name, block_urls, white_urls, downloaded_black, downloaded_white, output_dir, formats))
         for f in as_completed(futures):
             try:
                 f.result()
